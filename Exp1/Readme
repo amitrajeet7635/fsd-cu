@@ -1,0 +1,28 @@
+📋 Student Feedback Form
+
+This is a simple and responsive **HTML form** that allows students to provide feedback on their Full Stack Development (FSD) sessions. The form captures essential user information and preferences to help gather insights for future improvements.
+
+Features
+
+* 📛 **Name, Email, and Age Input**
+* ⭐ **Rating system** (1 to 5) for session feedback
+* ✅ **Course selection** using checkboxes (HTML, CSS, JavaScript, ReactJS)
+* 🎓 **Department selection** using dropdown menu
+* 🧾 **Form validation** using basic HTML5 attributes (`required`)
+* 🔘 Clean and minimal interface
+
+
+File Structure
+
+```
+student-feedback-form/
+│
+├── index.html      # Main HTML file containing the form
+└── README.md       # Project documentation
+```
+
+Technologies Used
+
+* HTML5
+* Basic Form Elements (Input, Radio, Checkbox, Dropdown)
+* Semantic Tags
