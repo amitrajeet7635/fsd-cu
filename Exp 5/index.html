@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Product Filter with Dropdown</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1>Enter Product Details</h1>
+      <div id="prod-details">
+        <input
+          type="text"
+          name="Product Id"
+          id="productId"
+          placeholder="Product Id"
+        />
+        <input
+          type="text"
+          name="Product Name"
+          id="productName"
+          placeholder="Product Name"
+        />
+        <input
+          type="number"
+          min="0"
+          name="Product Price"
+          id="productPrice"
+          placeholder="Product Price"
+        />
+        <input
+          type="text"
+          name="Product Category"
+          id="productCategory"
+          placeholder="Product Category"
+        />
+
+        <button class="add-prod" onclick="addProduct()">Add Product</button>
+      </div>
+
+      <div class="prod-filter">
+        <label for="prod-filter">Filter By Category</label>
+
+        <select id="prod-filter" onchange="filterbycategory()">
+          <option id="option" value="all">All Category</option>
+        </select>
+      </div>
+
+      <div class="prod-tb-div">
+        <table id="prod-table">
+          <thead>
+            <tr>
+              <th colspan="5">Products</th>
+            </tr>
+            <tr>
+              <td><strong>Product Id</strong></td>
+              <td><strong>Product Name</strong></td>
+              <td><strong>Product Quantity</strong></td>
+              <td><strong>Product Price</strong></td>
+              <td><strong>Category</strong></td>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
